@@ -1,0 +1,3 @@
+
+
+g++ simple_server_original.cpp -lcurl -lboost_system -Wall -lboost_system-mt -lboost_program_options-mt -o simple_server_original -g

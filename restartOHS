@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Password = appdynamics1
+
+../Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain/bin/startNodeManager.sh &
+
+../Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain/bin/stopComponent.sh ohs1 2> /dev/null
+
+../Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain/bin/startComponent.sh ohs1 2> /dev/null
+
+

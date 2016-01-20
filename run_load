@@ -1,0 +1,2 @@
+cd java_stuff/loadgen
+java load_generator

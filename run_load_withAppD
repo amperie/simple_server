@@ -1,0 +1,2 @@
+cd java_stuff/loadgen
+java -javaagent:/opt/appd/java/ver4.1.8.5/javaagent.jar -Dappdynamics.agent.tierName=LoadGen -Dappdynamics.agent.nodeName=LoadGen1 load_generator

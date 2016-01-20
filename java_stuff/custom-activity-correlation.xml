@@ -1,0 +1,29 @@
+<activities>
+<producer enabled="true">
+    <instrumentation>
+        <class-name>load_generator</class-name>
+        <method-name>send_message</method-name>
+        <match-type>MATCHES_CLASS</match-type>
+    </instrumentation>
+    <identifiers>
+        <identifier name="CustomProtocol">
+            <data-gatherer-type>INVOKED</data-gatherer-type>
+            <user-defined-name>CustomProtocol</user-defined-name>
+            <transformer-type>USER_DEFINED_NAME</transformer-type>
+        </identifier>
+    </identifiers>
+    <correlation>
+        <payload-pointer>
+            <data-gatherer-type>POSITION</data-gatherer-type>
+            <getter-chain>this</getter-chain>
+            <position>0</position>
+            <transformer-type>GETTER_METHODS</transformer-type>
+        </payload-pointer>
+        <payload-operation>
+            <access-type>method</access-type>
+            <param-types>String,String</param-types>
+            <access-method>add_field</access-method>
+        </payload-operation>
+    </correlation>
+</producer>
+</activities>

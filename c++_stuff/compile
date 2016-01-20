@@ -1,0 +1,5 @@
+
+export LIBRARY_PATH=$LIBRARY_PATH:/opt/appd/appdynamics-sdk-native/sdk_lib/lib/
+
+
+g++ simple_server.cpp -lappdynamics_native_sdk -lcurl -lboost_system -Wall -lboost_system-mt -lboost_program_options-mt -o simple_server -g
