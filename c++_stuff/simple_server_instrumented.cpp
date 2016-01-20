@@ -82,7 +82,6 @@ string dispatch_request (map<string,string> request)
 	if (reqType=="HEARTBEAT"){
 		retVal="beating";
 		usleep(100000);
-		return retVal;}
 	if (reqType=="UPDATE"){
 		appd_exitcall_handle hEX = appd_exitcall_begin(hBT,third_tier);	
 		const char* cHD = appd_exitcall_get_correlation_header(hEX);
